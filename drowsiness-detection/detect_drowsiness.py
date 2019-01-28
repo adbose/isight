@@ -38,9 +38,9 @@ def eye_aspect_ratio(eye):
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-p", "--shape-predictor", required=True,
-	help=".")
+	help="path of shape predictor")
 ap.add_argument("-a", "--alarm", type=str, default="",
-	help=".")
+	help="path of audio alarm")
 ap.add_argument("-w", "--webcam", type=int, default=0,
 	help="index of webcam on system")
 args = vars(ap.parse_args())
